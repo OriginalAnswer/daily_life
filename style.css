@@ -32,17 +32,12 @@ body{
   margin-left: 29.8%;
   margin-right: 29.8%;
 }
-.underTitle .week {
+.underTitle .week, .today, .keep {
   border-bottom: 0px solid white;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.underTitle .today{
-  border-bottom: 0px solid white;
-  padding-top: 10px;
-  padding-bottom: 10px
-}
-#week, #today{
+#week, #today, #keep{
   border-right: 1px solid white;
 }
 
@@ -73,7 +68,7 @@ body{
 
 
 
-@media(max-width:720px) {
+@media(max-width:736px) {
   .header h2{
     margin-top: 3px;
     margin-bottom: 3px;
