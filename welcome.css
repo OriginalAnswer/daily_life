@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  /* border: 1px solid #000; */
+  max-width: 400px;
+  font-family: normal Helvetica;
+  font-weight: 400;
+}
+.container h1{
+  /* color: #fff; */
+  color: #dacbcb;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: lighter;
+  font-stretch: expanded;
+  letter-spacing: 9.5px;
+  opacity: 1;
+  animation: appear 3s infinite alternate;
+}
+
+.container p{
+  color: #785e51;
+  font-size: large;
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  /* 30%{
+    opacity: 0.3;
+  }
+  60%{
+    opacity: 0.6;
+  } */
+  80%{
+    opacity: 1;
+  }
+}
