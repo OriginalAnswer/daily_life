@@ -1,116 +1,147 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Life</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <input type="checkbox" id="nav" class="hidden">
-        <label for="nav" class="nav-btn">
-          <i></i>
-          <i></i>
-          <i></i>
-          <!-- 메뉴버튼이 될 예정 -->
-        </label>
-        <div class="logo">
-          <a href="#">2019</a>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Life</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="nav" class="hidden">
+      <label for="nav" class="nav-btn">
+        <i></i>
+        <i></i>
+        <i></i>
+        <!-- 메뉴버튼이 될 예정 -->
+      </label>
+      <div class="logo">
+        <a href="#">2019</a>
+      </div>
+      <div class="nav-wrapper">
+        <!-- wrapper: 틀,포장지 라는 뜻 -->
+        <ul>
+          <li><a href="write.html">Write</a></li>
+          <li><a href="#">Issue Table</a></li>
+          <li><a href="#">Scrap</a></li>
+          <li><a href="#">Theme</a></li>
+          <li><a href="#">Setting</a></li>
+          <li><a href="#">+ Keywords</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="screenSection">
+    <section id="issue">
+      <div class="today">
+
+        <div class="month">
+          <p id="month"></p>
+          <script type="text/javascript">
+            var Month = new Date().getMonth() + 1;
+            document.getElementById("month").innerHTML = Month;
+          </script>
         </div>
-        <div class="nav-wrapper">
-          <!-- wrapper: 틀,포장지 라는 뜻 -->
-          <ul>
-            <li><a href="#">Write</a></li>
-            <li><a href="#">Scrap</a></li>
-            <li><a href="#">Theme</a></li>
-            <li><a href="#">Setting</a></li>
-            <li><a href="#">+ Keywords</a></li>
-          </ul>
+
+        <!-- <div class="">
+
         </div>
-      </nav>
-    </header>
+         -->
+        <div class="date">
+          <p id="date"></p>
+          <script type="text/javascript">
+            var Date = new Date().getDate();
+            document.getElementById("date").innerHTML = Date;
+          </script>
+        </div>
 
-    <div class="screenSection">
-      <section id="issue">
-      <img src="profile.jpg" alt="profile">
-      <div class="issue-text">
-        <h2>Journey</h2>
-        <p>It's time to move even further.</p>
-      </div>
-      <div class="issue-issueTable">
-        <span id="issue-issueTable-title">WEEK</span>
-        <span id="issue-issueTable-description">JavaScript Study</span>
-      </div>
-      <div class="issue-issueTable">
-        <span id="issue-issueTable-title">TODAY</span>
-        <span id="issue-issueTable-description">쓰레기 버리고 장보기, 집정리</span>
-      </div>
-      <div class="issue-issueTable">
-        <span id="issue-issueTable-title">2.21.THR</span>
-        <span id="issue-issueTable-description">OT - 2:00 ~ 4:30</span>
-      </div>
-      </section>
+      </div><!-- /end Today -->
 
-      <section id="main">
-        <article class="container">
-          <div id="date">
-            WED, FEBRUARY 13
-          </div>
-          <div id="textzone">
-            " TEXT "<br>
-            "This page is under construction.."
-          </div>
-          <div id="maincontrol">
-            <div id="maincontrol-left">
-              <input type="button" name="SCRAP" value="scrap">
-            </div>
-            <div id="maincontrol-right">
-              <input type="button" name="DELETE" value="delete">
-              <input type="button" name="EDIT" value="edit">
-            </div>
-          </div>
-        </article>
+      <div class="issue-container">
+        <img src="img/profile.jpg" alt="profile">
+        <div class="issue-text">
+          <h2>Journey</h2>
+          <p>It's time to move even further.</p>
+        </div>
 
-        <article class="container">
-          <div id="date">
-            TUE, FEBRUARY 12
-          </div>
-          <div id="textzone">
-            " TEXT "<br>
-            "This page is under construction.."
-          </div>
-          <div id="maincontrol">
-            <div id="maincontrol-left">
-              <input type="button" name="SCRAP" value="scrap">
-            </div>
-            <div id="maincontrol-right">
-              <input type="button" name="DELETE" value="delete">
-              <input type="button" name="EDIT" value="edit">
-            </div>
-          </div>
-        </article>
+        <div class="issue-issueTable">
+          <span id="issue-issueTable-title">WEEK</span>
+          <span id="issue-issueTable-description">JavaScript Study</span>
+        </div>
+        <div class="issue-issueTable">
+          <span id="issue-issueTable-title">TODAY</span>
+          <span id="issue-issueTable-description">OT - 2:00 ~ 4:30</span>
+        </div>
+        <div class="issue-issueTable">
+          <span id="issue-issueTable-title">2.21.THR</span>
+          <span id="issue-issueTable-description">OT - 2:00 ~ 4:30</span>
+        </div>
+      </div>
+    </section>
 
-        <article class="container">
-          <div id="date">
-            MON, FEBRUARY 11
+    <section id="main">
+      <article class="container">
+        <div id="date">
+          WED, FEBRUARY 13
+        </div>
+        <div id="textzone">
+          " TEXT "<br>
+          "This page is under construction..<br><br><br>"
+        </div>
+        <div id="maincontrol">
+          <div id="maincontrol-left">
+            <input type="button" name="SCRAP" value="scrap">
           </div>
-          <div id="textzone">
-            " TEXT "<br>
-            "This page is under construction.."
+          <div id="maincontrol-right">
+            <input type="button" name="DELETE" value="delete">
+            <input type="button" name="EDIT" value="edit">
           </div>
-          <div id="maincontrol">
-            <div id="maincontrol-left">
-              <input type="button" name="SCRAP" value="scrap">
-            </div>
-            <div id="maincontrol-right">
-              <input type="button" name="DELETE" value="delete">
-              <input type="button" name="EDIT" value="edit">
-            </div>
+        </div>
+      </article>
+
+      <article class="container">
+        <div id="date">
+          TUE, FEBRUARY 12
+        </div>
+        <div id="textzone">
+          " TEXT "<br>
+          "This page is under construction.."
+        </div>
+        <div id="maincontrol">
+          <div id="maincontrol-left">
+            <input type="button" name="SCRAP" value="scrap">
           </div>
-        </article>
-      </section>
-    </div>
-  </body>
+          <div id="maincontrol-right">
+            <input type="button" name="DELETE" value="delete">
+            <input type="button" name="EDIT" value="edit">
+          </div>
+        </div>
+      </article>
+
+      <article class="container">
+        <div id="date">
+          MON, FEBRUARY 11
+        </div>
+        <div id="textzone">
+          " TEXT "<br>
+          "This page is under construction.."
+        </div>
+        <div id="maincontrol">
+          <div id="maincontrol-left">
+            <input type="button" name="SCRAP" value="scrap">
+          </div>
+          <div id="maincontrol-right">
+            <input type="button" name="DELETE" value="delete">
+            <input type="button" name="EDIT" value="edit">
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</body>
+
 </html>

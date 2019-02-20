@@ -10,6 +10,9 @@ body{
 a{
   text-decoration: none;
 }
+a:active{
+  color:none;
+}
 
 .btn-bg{
   display: flex;
