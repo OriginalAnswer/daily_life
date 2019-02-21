@@ -225,7 +225,7 @@ nav ul li a{
 
 
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 880px) {
   #issue{
     display: block;
     padding: 13px 10%;
