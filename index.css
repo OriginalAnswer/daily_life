@@ -144,6 +144,7 @@ nav ul li a{
 
 #issue .issue-text{
   padding: 5px 0;
+  display: flex;
 }
 
 #issue .issue-text h2{
