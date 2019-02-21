@@ -18,6 +18,7 @@ body{
   height: 100vh;
   font-family: 15px/1.5 Helvetica;
   font-weight: 400;
+  background-color: #fff;
   /* background-color: #f3e9e4; */
 }
 
@@ -101,12 +102,12 @@ nav ul li a{
 }
 
 #issue .issue-container{
-position: relative;
-z-index: 18;
+  position: relative;
+  z-index: 18;
 }
 
 #issue .today{
-  position: absolute;
+  position: fixed;
   /* grid-template-columns: 1fr 1fr; */
   top: 20px;
   left: 50%;
@@ -115,7 +116,7 @@ z-index: 18;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-size: 150px;
+  font-size: 170px;
   z-index: 17;
 }
 #issue .today p{
@@ -169,15 +170,17 @@ z-index: 18;
 .container{
   background-color: #fff;
   display: block;
-  border-top: 1px solid #e9e9e9;
-  border-bottom: 1px solid #e9e9e9;
+  position: relative;
+  z-index: 18;
   margin: 4px 20%;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 .container #date{
   text-align: left;
   padding-left: 5px;
   padding-top: 3px;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 .container #textzone{
@@ -187,7 +190,8 @@ z-index: 18;
 .container #maincontrol{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 3px 5px;
+  padding-bottom: 3px;
+  border-top: 1px solid #e9e9e9;
 }
 
 .container #maincontrol #maincontrol-left{
